@@ -10,4 +10,5 @@ run:
 	python ./simulation/main.py
 
 install:
+	@echo "Installing..."
 	pip install -r requirements.txt
