@@ -9,6 +9,6 @@ def calculate_ber(input: list, output: list):
     errors = 0
 
     for i in range(len(input)):
-        errors += input[i] * output[i]
+        errors += input[i] ^ output[i]
 
     return errors / len(input)

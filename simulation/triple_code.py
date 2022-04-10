@@ -1,6 +1,6 @@
 
 # Triple input bits
-def code_triple(input: list) -> list:
+def encode(input: list) -> list:
     output = []
     
     for i in input:
@@ -10,7 +10,7 @@ def code_triple(input: list) -> list:
     return output
 
 # Decode input bits
-def decode_triple(input: list) -> list:
+def decode(input: list) -> list:
     output = []
 
     for i in range(0, len(input), 3):

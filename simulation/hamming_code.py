@@ -1,7 +1,7 @@
 import numpy
 
 # Code input bits
-def code_hamming(input: list) -> list:
+def encode(input: list) -> list:
     length = len(input)
     output = []
 
@@ -15,7 +15,7 @@ def code_hamming(input: list) -> list:
     return output
 
 # Decode input bits
-def decode_hamming(input: list):
+def decode(input: list):
     output = []
 
     if len(input) % 7 != 0:
