@@ -2,13 +2,11 @@ import numpy
 
 # Code input bits
 def encode(input: list) -> list:
-    length = len(input)
-    output = []
-
-    if length % 4 != 0:
+    if len(input) % 4 != 0:
         raise ValueError()
 
-    for i in range(0, length, 4):
+    output = []
+    for i in range(0, len(input), 4):
         word = code_word(input[i:i+4])
         output.extend(word)
 
@@ -16,11 +14,10 @@ def encode(input: list) -> list:
 
 # Decode input bits
 def decode(input: list):
-    output = []
-
     if len(input) % 7 != 0:
         raise ValueError()
 
+    output = []
     for i in range(0, len(input), 7):
         output.extend(correct_error(input[i:i+7]))
 
