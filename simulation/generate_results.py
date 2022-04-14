@@ -1,4 +1,3 @@
-from os import getcwd
 import channels
 import utils
 import bch_code
