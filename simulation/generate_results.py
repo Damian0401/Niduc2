@@ -9,7 +9,7 @@ gec = channels.gilbert_elliot(0.75, 0.1, 0.35)
 bsc = channels.binary_symmetric(0.25)
 
 data_amount = [10, 20, 50, 100, 200, 500, 1000, 2000, 5000]
-filePath = './simulation/results/'
+file_path = './simulation/results/'
 
 def simulate(code, channel, data_amount: list, file_name: str):
     file = open(file_name, 'w')
@@ -33,12 +33,12 @@ def simulate(code, channel, data_amount: list, file_name: str):
     print('Done.')
 
 def main():
-    simulate(hamming_code, bsc, data_amount, filePath + 'hamming_bsc.csv')
-    simulate(hamming_code, gec, data_amount, filePath + 'hamming_gec.csv')
-    simulate(triple_code, bsc, data_amount, filePath + 'triple_bsc.csv')
-    simulate(triple_code, gec, data_amount, filePath + 'triple_gec.csv')
-    simulate(bch_code, bsc, data_amount, filePath + 'bch_bsc.csv')
-    simulate(bch_code, gec, data_amount, filePath + 'bch_gec.csv')
+    simulate(hamming_code, bsc, data_amount, file_path + 'hamming_bsc.csv')
+    simulate(hamming_code, gec, data_amount, file_path + 'hamming_gec.csv')
+    simulate(triple_code, bsc, data_amount, file_path + 'triple_bsc.csv')
+    simulate(triple_code, gec, data_amount, file_path + 'triple_gec.csv')
+    simulate(bch_code, bsc, data_amount, file_path + 'bch_bsc.csv')
+    simulate(bch_code, gec, data_amount, file_path + 'bch_gec.csv')
 
 if __name__ == '__main__':
     main()

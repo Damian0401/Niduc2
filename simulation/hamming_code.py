@@ -28,10 +28,10 @@ def code_word(input: list) -> list:
     if len(input) != 4:
         raise ValueError()
 
-    inputMatrix = numpy.array([input])
+    input_matrix = numpy.array([input])
     G = numpy.array([[1,0,0,0,1,1,1],[0,1,0,0,1,0,1],[0,0,1,0,1,1,0],[0,0,0,1,0,1,1]])
 
-    code = inputMatrix.dot(G)
+    code = input_matrix.dot(G)
     code = code % 2
 
     return code[0]
@@ -41,10 +41,10 @@ def calculate_syndrome(input: list) -> list:
     if len(input) != 7:
         raise ValueError()
 
-    inputMatrix = numpy.array([input])
+    input_matrix = numpy.array([input])
     H = numpy.array([[1,1,1],[1,0,1],[1,1,0],[0,1,1],[1,0,0],[0,1,0],[0,0,1]])
 
-    syndrome = inputMatrix.dot(H)
+    syndrome = input_matrix.dot(H)
     syndrome = syndrome % 2
 
     return syndrome[0]
