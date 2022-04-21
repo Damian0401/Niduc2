@@ -10,6 +10,8 @@ def show_plot(files_names: dict):
         x = data[headers[0]]
         y = data[headers[1]]
         plt.plot(x, y, label = data_name)
+    plt.xlabel(headers[0])
+    plt.ylabel(headers[1])
     plt.legend()
     plt.show()
 
