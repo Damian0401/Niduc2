@@ -21,18 +21,18 @@ def display():
     print('2 <- Hamming code plots')
     print('3 <- Triple code plots')
     print('4 <- BCH code plots')
-    print('5 <- Binnary symetric channel plots')
+    print('5 <- Binary symmetric channel plots')
     print('6 <- Gilbert-Elltiot channel plots')
 
     selected_option = int(input())
 
     if selected_option == 1:
         files_names = {
-            'hamming_bsc.csv' : 'Hamming - Binnary symetric',
+            'hamming_bsc.csv' : 'Hamming - Binary symmetric',
             'hamming_gec.csv' : 'Hamming - Gilbert Elliot',
-            'triple_bsc.csv' : 'Triple - Binnary symetric',
+            'triple_bsc.csv' : 'Triple - Binary symmetric',
             'triple_gec.csv' : 'Triple - Gilbert Elliot',
-            'bch_bsc.csv' : 'BCH - Binnary symetric',
+            'bch_bsc.csv' : 'BCH - Binary symmetric',
             'bch_gec.csv' : 'BCH - Gilbert Elliot',
         }
         show_plot(files_names)
@@ -40,7 +40,7 @@ def display():
 
     if selected_option == 2:
         files_names = {
-            'hamming_bsc.csv' : 'Hamming - Binnary symetric',
+            'hamming_bsc.csv' : 'Hamming - Binary symmetric',
             'hamming_gec.csv' : 'Hamming - Gilbert Elliot',
         }
         show_plot(files_names)
@@ -48,7 +48,7 @@ def display():
 
     if selected_option == 3:
         files_names = {
-            'triple_bsc.csv' : 'Triple - Binnary symetric',
+            'triple_bsc.csv' : 'Triple - Binary symmetric',
             'triple_gec.csv' : 'Triple - Gilbert Elliot',
         }
         show_plot(files_names)
@@ -56,7 +56,7 @@ def display():
 
     if selected_option == 4:
         files_names = {
-            'bch_bsc.csv' : 'BCH - Binnary symetric',
+            'bch_bsc.csv' : 'BCH - Binary symmetric',
             'bch_gec.csv' : 'BCH - Gilbert Elliot',
         }
         show_plot(files_names)
@@ -64,9 +64,9 @@ def display():
 
     if selected_option == 5:
         files_names = {
-            'hamming_bsc.csv' : 'Hamming - Binnary symetric',
-            'triple_bsc.csv' : 'Triple - Binnary symetric',
-            'bch_bsc.csv' : 'BCH - Binnary symetric',
+            'hamming_bsc.csv' : 'Hamming - Binary symmetric',
+            'triple_bsc.csv' : 'Triple - Binary symmetric',
+            'bch_bsc.csv' : 'BCH - Binnary symmetric',
         }
         show_plot(files_names)
         return
